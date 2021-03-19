@@ -1,0 +1,86 @@
+@import "./index.scss";
+
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+.logo-container {
+    padding-top: 18vh;
+}
+
+.logo-container img {
+    width: 5%;
+}
+
+.app-name-container {
+    h1 {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        color: $secondary-color;
+        font-size: 72px;
+    }
+}
+
+.input-container {
+    width: 30vw;
+    margin-left: 35vw;
+
+    input[type=email] {
+        padding: 13px; 
+        border: 2px solid $primary-color; 
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        outline: none;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        color: $primary-color;
+    }
+    
+    input[type=email]:focus {
+        border-color:$secondary-color;
+        outline: none;
+    }
+
+    ::placeholder { /* Most modern browsers support this now. */
+        color: rgba(25, 102, 112, 0.52);
+    }
+}
+
+.button-container {
+    margin-top: 35px;
+
+    .next-button {
+        display: inline-block;
+        background: rgba(35, 102, 112, 0.38);
+        color: $primary-color;
+        border-radius: 50%;
+        width: 33px;
+        height: 33px;
+        font-size: 20px;
+
+        .fa-arrow-right {
+            position: relative;
+            top: 4px;
+        }
+    }
+
+    .button-text {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 600;
+        color: $primary-color;
+        margin-left: 13px;
+    }
+}
+
+.time-container {
+    position: absolute;
+    bottom: 20px;
+    right: 35px;
+    font-weight: 900;
+    color: $primary-color;
+}
